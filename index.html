@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
-    <title>Finding Connections</title>
+    <title>PoliLoom</title>
 
     <link
       rel="stylesheet"
@@ -25,14 +25,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
 
     <style>
       :root {
-        --r-heading-font: "Inter", sans-serif;
-        --r-main-font: "Source Sans 3", sans-serif;
+        --r-heading-font: "Mona Sans", sans-serif;
+        --r-main-font: "Mona Sans", sans-serif;
         --r-heading-text-transform: none;
       }
     </style>
@@ -46,9 +46,28 @@
       }
     </style>
   </head>
+
   <body>
     <div class="reveal">
-      <div class="slides"></div>
+      <div class="slides">
+        <section>
+          <h1>PoliLoom</h1>
+          <p>Having robots enrich politician data</p>
+        </section>
+
+        <section>
+          <p>Using robots for good</p>
+        </section>
+      </div>
     </div>
+    <script type="module">
+      import "https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.min.js";
+      import "https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/highlight/highlight.js";
+
+      Reveal.initialize({
+        history: true,
+        plugins: [RevealHighlight],
+      });
+    </script>
   </body>
 </html>
