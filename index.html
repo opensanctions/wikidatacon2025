@@ -151,15 +151,57 @@
         </section>
 
         <section>
-          <p>Architecture</p>
+          <h3>Architecture</h3>
+          <p class="fragment">Ingest API + Evaluation GUI</p>
         </section>
 
         <section>
-          <p>Two stage extraction</p>
+          <h4>Ingest API</h4>
+          <ul>
+            <li>Ingests wikidata dumps</li>
+            <li>Archives web sources</li>
+            <li>Extracts statements</li>
+          </ul>
         </section>
 
         <section>
-          <p>Fancy GUI</p>
+          <h4>Evaluation GUI</h4>
+          <ul>
+            <li>User-friendly evaluation</li>
+            <li>Metawiki OAuth system</li>
+            <li>Highlighting of archived sources</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Extracts statements?</h3>
+          <p class="fragment">Extract, then reconcile</p>
+        </section>
+
+        <section>
+          <ol>
+            <li class="fragment">Extract strings from documents</li>
+            <li class="fragment">Search for matching entities</li>
+            <li class="fragment">LLM reconciliation</li>
+          </ol>
+        </section>
+
+        <section>
+          <h4>1. Extract strings</h4>
+          <p>LLM identifies statements:</p>
+          <p><strong>"Member of Saarbrücken City Council"</strong></p>
+        </section>
+
+        <section>
+          <h4>2. Search for matches</h4>
+          <p>Semantic search identifies matches:</p>
+          <p><strong>"Mitglied der Regionalversammlung Saarbrücken"</strong></p>
+        </section>
+
+        <section>
+          <h4>3. LLM reconciliation</h4>
+          <p>Source strings + Matching entity descriptions</p>
+          <p>Structured data API: <strong>"Q99775411"</strong></p>
         </section>
 
         <section class="title" data-background="backgrounds/7_WDC25_logo.jpg">
